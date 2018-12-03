@@ -1,10 +1,11 @@
 
+## MJRefresh
 
-## <a id="The_Class_Structure_Chart_of_MJRefresh"></a>The Class Structure Chart of MJRefresh
-
+- 下拉刷新原理
+- MJRefreshComponent
+- 关联下拉刷新控件到UIScrollView
 - 继承结构可以分为三层
  ![](http://images0.cnblogs.com/blog2015/497279/201506/132232456139177.png)
-
 
 ### 下拉刷新原理
 

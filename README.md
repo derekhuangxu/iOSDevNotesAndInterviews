@@ -13,9 +13,10 @@
 - **[iOS技能图谱](#iOSinterview)**
 - **[iOSDevNote](#iOSDevNote)**
 - **[iOS开源框架涉及](#frameWorks)**
-- **[Git](#Git)**
+- **[开发基础相关](#Git&&markdown)**
+	- Git
+	- markdown
 - **[ReactNative](#ReactNative)**
-- **[other](#other)**
 
 > Recommend clone 
 > `git clone --depth 3 https://github.com/DevDragonLi/iOSDevNotesAndInterviews`
@@ -38,20 +39,19 @@
 
 | CATEGORY | FILENAME |  
 |:----|:----|
-|iOSDevNote|[**iOS架构相关**](./iOSNote/iOS_architecture.pdf)<br>[**掘金客户端体积瘦身**](./iOSNote/appThin/readme.md)<br>[**iOSDevCodeRepo**](https://github.com/DevDragonLi/iOSDevDemo)<br>[Core Animation框架结构及性能调优11张大图详解](https://github.com/DevDragonLi/Core-AnimationPerformanceOptimization)<br>[iOS_StaticLibrary](./iOSNote/iOS_StaticLibrary/readme.md)<br>[iOS经典Crash分析与总结- QQ`MelonTeam`](./iOSNote/crash/README.md)<br>[iOS核心动画高级技巧阅读笔记(**性能调优**,**高效绘制**,**图像IO**,**图层性能**)](./iOSNote/Article/iOS-coreAnimationNote.md)<br>[单元测试概述](./iOSNote/Article/UnitTesting.md)<br>[**iOS12**](./iOSNote/iOS12/readme.md)|
-|CocoaPods 相关 |[CocoaPods提交开源的框架之流程](./iOSNote/CocoaPods/cocoapods-podspec.md)<br> [CocoaPods管理库的使用技巧](./iOSNote/CocoaPods/CocoaPods管理库的使用技巧.md)<br>[CocoaPods提交私有的框架之流程](./iOSNote/CocoaPods/Pod&&spec.md) <br>[CocoaPods私有库参考Demo](https://github.com/DevDragonLi/iOSDevDemo/tree/master/1-DevDemo/PodPrivate_demo )|
-|iOS技能图谱|[iOS技能图谱-byStuQ](./iOSNote/Article/map-MobileDev-iOSDev.md)<br>[JSPatch作者博客中的技能树](./images/iOSDev-bang.png)|
+|iOSDevNote|[**iOS架构相关**](./iOSNote/iOS_architecture.pdf)<br>[**掘金客户端体积瘦身**](./iOSNote/appThin/readme.md)<br>[**iOSDevCodeRepo**](https://github.com/DevDragonLi/iOSDevDemo)<br>[Core Animation框架结构及性能调优11张大图详解-RepoLink](https://github.com/DevDragonLi/Core-AnimationPerformanceOptimization)<br>[iOS_StaticLibrary](./iOSNote/iOS_StaticLibrary/readme.md)<br>[iOS经典Crash分析与总结- QQ`MelonTeam`](./iOSNote/crash/README.md)<br>[iOS核心动画高级技巧阅读笔记(**性能调优**,**高效绘制**,**图像IO**,**图层性能**)](./iOSNote/Article/iOS-coreAnimationNote.md)<br>[单元测试概述](./iOSNote/Article/UnitTesting.md)<br>[**iOS开发者所需要知道的iOS 12**](./iOSNote/NewVersion/readme.md)<br>[iOS_Article_List](./iOSNote/iOS_Collection_article_List.md)|
+|CocoaPods 相关 |[CocoaPods提交开源的框架之流程](./iOSNote/CocoaPods/cocoapods-podspec.md)<br> [CocoaPods管理库的使用技巧](./iOSNote/CocoaPods/CocoaPodsManageTips.md)<br>[CocoaPods提交私有的框架之流程](./iOSNote/CocoaPods/Pod&&spec.md) <br>[CocoaPods私有库参考Demo](https://github.com/DevDragonLi/iOSDevDemo/tree/master/1-DevDemo/PodPrivate_demo )|
+|iOS技能图谱|[iOS技能图谱-byStuQ](./iOSNote/Article/map-MobileDev-iOSDev.md)<br>[JSPatch作者博客中的技能树-图](./images/iOSDev-bang.png)|
 
-## <a name="Git"></a> Git
+## <a name="Git&&markdown"></a> 开发基础相关
 
 | CATEGORY | FILENAME |  
 |:----|:----|
-| Git |[指令使用总结](./Git.md)<br>[Gitflow -工作流](./other/Gitflow.md)<br>[命令图谱- @吴坚｜南航软件工程师](https://github.com/TeamStuQ/skill-map/blob/master/data/map-Git.md)<br>[git-from-the-inside-out](https://maryrosecook.com/blog/post/git-from-the-inside-out)<br>[Git指令速查图](./images/git_easy.jpg)|
+| Git |[指令使用总结](./base/Git.md)<br>[GitFlow -工作流](./base/Gitflow.md)<br>[命令图谱- @吴坚｜南航软件工程师](https://github.com/TeamStuQ/skill-map/blob/master/data/map-Git.md)<br>[git-from-the-inside-out](https://maryrosecook.com/blog/post/git-from-the-inside-out)<br>[Git指令速查-图](./images/git_easy.jpg)|
 
-## <a name="other"></a> other
 | CATEGORY | FILENAME |  
 |:----|:----|
-| Markdown |[Markdown](./other/Markdown.md)|
+| Markdown相关 |[Markdown](./base/Markdown.md)|
 
 
 ### <a name="ReactNative"></a> ReactNative 
@@ -64,15 +64,9 @@
 - [video](http://list.youku.com/albumlist/show?id=27615900&ascending=1&page=1)
 - [官方Examples](https://github.com/facebook/react-native/tree/master/Examples)
 - **ReactNativeSources文件夹明细(迁移文件到coding)**  [地址](https://coding.net/u/LFL/p/GitHubRepo/git)
+	- 简寻沙龙】《加速创业的魔法-React Native》 张旭.pdf
+	- 移动端会场03 朱柯军 - 《天猫 React Native 实践与探索》
+	- 方志刚）React Native - iOS 开发吐槽大会  (2016-11.11 更新)
 
-```
-
-1.【简寻沙龙】《加速创业的魔法-React Native》 张旭.pdf
-2. 移动端会场03 朱柯军 - 《天猫 React Native 实践与探索》
-3.方志刚）React Native - iOS 开发吐槽大会  (2016-11.11 更新)
-
-```
-
-## 如果您在repo中发现了问题，欢迎提交 PR 或者 issue，欢迎大神们多多指点
-
-- **Dragonli_52171@163.com**
+## 如果您在repo中发现了问题，欢迎提交 PR / issue
+> **Dragonli_52171@163.com**

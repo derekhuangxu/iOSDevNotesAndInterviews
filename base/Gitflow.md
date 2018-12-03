@@ -1,8 +1,8 @@
 
-# Git flow  
+# Git Flow  
 
-- [参考:Git 工作流程](http://www.ruanyifeng.com/blog/2015/12/git-workflow.html)
-- [Git 在团队中的最佳实践--如何正确使用Git Flow](https://www.cnblogs.com/cnblogsfans/p/5075073.html)
+- [阮一峰:Git工作流程](http://www.ruanyifeng.com/blog/2015/12/git-workflow.html)
+- [Git在团队中的最佳实践--如何正确使用GitFlow](https://www.cnblogs.com/cnblogsfans/p/5075073.html)
 - 功能驱动 :(Feature-driven development，简称FDD）
 	- 先有需求再有功能分支（feature branch）或者补丁分支（hotfix branch）。
 	- 完成开发后，该分支就合并到主分支，然后被删除
@@ -14,9 +14,9 @@
 	* 功能分支（feature branch）
 	* 补丁分支（hotfix branch）
 	* 预发分支（release branch）
-* ![](./images/gitflow_brief.png)
+* ![](../images/gitflow_brief.png)
 
-## Git Flow常用的分支
+## 常见分支
 
 - Production 分支
 	- 也就是我们经常使用的Master分支，这个分支最近发布到生产环境的代码，最近发布的Release， 这个分支只能从其他分支合并，不能在这个分支直接修改
@@ -39,6 +39,10 @@
 	- 当我们在Production发现新的Bug时候,**基于Master分支创建Hotfix** 
 	- 完成Hotfix后，我们合并回Master和Develop分支，**所以Hotfix的改动会进入下一个Release**
 
-- ![](./images/git-flow.png)
+ ![](../images/git-flow.png)
+ 
+ 
 
-
+### 有任何问题及时反馈 email -> `dragonli_52171@163.com` 
+ 
+ 

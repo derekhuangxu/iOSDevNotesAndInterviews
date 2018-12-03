@@ -1,23 +1,21 @@
 # Markdown
 
-## Markdown 文件自动生成目录？
+### Markdown 文件自动生成目录？
 
-> 部分`file`,可能会有错乱,还需要手动纠正一下.
-
->  [参考目录 example](https://github.com/DevDragonLi/iOSDevNotesAndInterviews)
+>  [example repo README](https://github.com/DevDragonLi/iOSDevNotesAndInterviews)
 
 - [下载和安装 pandoc](https://github.com/jgm/pandoc/releases)
-
 - `pandoc --version` ,确认已安装 
-- 生成链接目录
+- 生成链接目录,部分`file`,可能会有错乱,还需要手动纠正一下.
+
 	- `pandoc -s --toc README.md -o README.md` 
 	- `-depth=[数字]` ,可以指定级🌲
 	- `pandoc -s --toc --toc-depth=5 README.md -o README.md `
 
 
+### 基本语法
 
-###  [Markdown 基本语法](https://github.com/younghz/Markdown)
-
+> https://github.com/younghz/Markdown
 
 - 代码 : ``` 代码块 ```
 
@@ -35,7 +33,6 @@
 
 - 收起 :<details>
 
-```
 <details>
 <summary> 标题 </summary>
 
@@ -43,12 +40,13 @@
 - ======  -------  一级和二级标题等,不常用
 </details>
 
-```
 
 
 
+###  常用
 
-- 1.不同数目个#,代表不同的字体大小  
+-  不同数目个#,代表不同的字体大小
+
 
 - ======  -------  一级和二级标题等,不常用
 
@@ -110,8 +108,10 @@ DragonLi
 ___
 
 
-- 其他补充 `dragonli_52171@163.com`
+- <u>下划线文本</u>
 
-	- <u>下划线文本</u>
+- <font face="微软雅黑" color="red" size="6">内容</font>
 
-	- <font face="微软雅黑" color="red" size="6">内容</font>
+
+### 有任何问题及时反馈 email -> `dragonli_52171@163.com` 
+
