@@ -1,4 +1,4 @@
-### 校招攻略43份优质面经汇总iOS开发
+# 校招攻略43份优质面经汇总iOS开发
 
 - [origin github link ](https://github.com/NtZheng/NTBlog/issues/2)
 
@@ -1063,7 +1063,7 @@
 
 ## 链接
 
-- [面试题系列目录](README.md)
+- [面试题系列目录](../README.md)
 - **上一份**: [如何在天猫、蚂蚁金服、百度等大厂面试中被拒](interview-iOS-11-如何在天猫、蚂蚁金服、百度等大厂面试中被拒.md)
 - **下一份**: [2018秋招iOS面试总结-渣渣本科生](interview-iOS-13-2018秋招iOS面试总结-渣渣本科生.md)
 

@@ -4,8 +4,6 @@
 
 > 鏈接：https://www.jianshu.com/p/a992b5f697ca
 
-> 來源：簡書
-
 - Effective Objective-C 
 - 和Objective-C高级编程（多线程和内存管理）
 - 程序员的自我修养
@@ -195,6 +193,6 @@
 
 ## 链接
 
-- [面试题系列目录](README.md)
+- [面试题系列目录](../README.md)
 - **上一份**: [2018秋招iOS面试总结-渣渣本科生](interview-iOS-13-2018秋招iOS面试总结-渣渣本科生.md)
 -  **下一份**: [腾讯社招iOS面试记录2018-07](interview-iOS-15-腾讯社招iOS面试记录2018-07.md)

@@ -1,7 +1,8 @@
 ## 如何在天猫、蚂蚁金服、百度等大厂面试中被拒
 
 > 作者：ZhHS
-链接：https://juejin.im/post/5ad80ad35188252eae3b22a4
+
+>链接：https://juejin.im/post/5ad80ad35188252eae3b22a4
 
 
 ### 天猫 天猫的面试通知
@@ -62,6 +63,6 @@
 
 ## 链接
 
-- [面试题系列目录](README.md)
+- [面试题系列目录](../README.md)
 - **上一份**: [iOS面试败北感悟](interview-iOS-10-iOS面试败北感悟.md)
 - **下一份**: [校招攻略43份优质面经汇总iOS开发](interview-iOS-12校招攻略43份优质面经汇总iOS开发.md)

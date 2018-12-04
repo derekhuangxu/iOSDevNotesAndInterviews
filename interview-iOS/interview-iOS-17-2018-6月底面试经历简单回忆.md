@@ -5,9 +5,6 @@
 
 > 鏈接：https://www.jianshu.com/p/7b0eb24b567b
 
-> 來源：簡書
-
--  面试整理
 
 ### 阿里 去年面的
 
@@ -139,6 +136,6 @@
 
 ## 链接
 
-- [面试题系列目录](README.md)
+- [面试题系列目录](../README.md)
 - **上一份**: [腾讯社招iOS面试记录](interview-iOS-15-腾讯社招iOS面试记录2018-07.md)
 - **下一份**: [2018苏州蜗牛iOS面试](interview-iOS-18-2018苏州蜗牛iOS面试.md)

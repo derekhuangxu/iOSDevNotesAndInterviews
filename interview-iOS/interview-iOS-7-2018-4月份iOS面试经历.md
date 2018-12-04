@@ -1,7 +1,7 @@
 # 2018-4月份iOS面试经历
 
 > 作者：Xcode_boy
-链接：https://juejin.im/post/5adaed6a518825673123c757
+> 链接：https://juejin.im/post/5adaed6a518825673123c757
 
 ## 算法题
 
@@ -16,7 +16,6 @@
 - 解题思路：请百度……哈哈
 
 
-##  OC题
 ### Block中可以修改全局变量，全局静态变量，局部静态变量吗？
 - 可以.[深入研究Block捕获外部变量和__block实现原理](https://www.jianshu.com/p/ee9756f3d5f6)
 	- 全局变量和静态全局变量的值改变，以及它们被Block捕获进去，因为是全局的，作用域很广
@@ -56,7 +55,7 @@ NSLog(@"%@", weakString);
 
 ### SDWebImage实现原理是什么？ 它是如何解决tableView的复用时出现图片错乱问题的呢？
 - 解决tableView复用错乱问题：每次都会调UIImageView+WebCache文件中的 [self sd_cancelCurrentImageLoad];
-- [原理](https://www.jianshu.com/p/13c0cdc7987e)
+- [原理解释参考](https://www.jianshu.com/p/13c0cdc7987e)
 	- SDWebImageDownloader  
 	- 图片的下载操作放在一个NSOperationQueue并发操作队列中，队列默认最大并发数是6
 	- 每个图片对应一些回调（下载进度，完成回调等），回调信息会存在downloader的URLCallbacks（一个字典，key是url地址，value是图片下载回调数组）中，URLCallbacks可能被多个线程访问，所以downloader把下载任务放在一个barrierQueue中，并设置屏障保证同一时间只有一个线程访问URLCallbacks。，在创建回调URLCallbacks的block中创建了一个NSOperation并添加到NSOperationQueue中
@@ -87,6 +86,6 @@ NSLog(@"%@", weakString);
 
 ## 链接
 
-- [面试题系列目录](README.md)
-- **上一份**: [interview-iOS-6](interview-iOS-6.md)
+- [面试题系列目录](../README.md)
+- **上一份**: [基础问题系列](interview-iOS-6.md)
 - **下一份**: [我的iOS面试之旅](interview-iOS-8-我的iOS面试之旅.md)

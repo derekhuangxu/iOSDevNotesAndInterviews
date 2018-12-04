@@ -1,22 +1,25 @@
 
-# [MrPeak的题目出处](https://zhuanlan.zhihu.com/p/22834934)
+# 面试题作者：MrPeak 
 
-- Question list
+> Facebook · Software engineer 
 
-	- 谈下iOS开发中知道的哪些锁? 哪个性能最差?SD和AFN使用的哪个? 一般开发中你最常用哪个? 哪个锁apple存在问题又是什么问题?
-	- iOS下如何实现指定线程数目的线程池?
-	- 如何用HTTP实现长连接？
-	- http的post和get啥区别
-	- 使用atomic一定是线程安全的吗？
-	- 数据库建表的时候索引有什么用？
-	- 介绍下iOS设备获取唯一设备号的历史变迁
-	- 如何使用runtime hook一个class的某个方法，又如何hook某个instance的方法？
-	- 聊下HTTP的POST的body体使用form-urlencoded和multipart/form-data的区别。
-	- 通过[UIImage imageNamed:]生成的对象什么时候被释放？
-	- applicationWillEnterForeground和applicationDidBecomeActive都会在哪些场景下被调用？举例越多越好。
-	- 如何终止正在运行的工作线程？
-	- iOS下所有的本地持久化方案。
+>[题目出处](https://zhuanlan.zhihu.com/p/22834934)
 
+> Question list 
+
+- 谈下iOS开发中知道的哪些锁? 哪个性能最差?SD和AFN使用的哪个? 一般开发中你最常用哪个? 哪个锁apple存在问题又是什么问题?
+- iOS下如何实现指定线程数目的线程池?
+- 如何用HTTP实现长连接？
+- http的post和get啥区别
+- 使用atomic一定是线程安全的吗？
+- 数据库建表的时候索引有什么用？
+- 介绍下iOS设备获取唯一设备号的历史变迁
+- 如何使用runtime hook一个class的某个方法，又如何hook某个instance的方法？
+- 聊下HTTP的POST的body体使用form-urlencoded和multipart/form-data的区别。
+- 通过[UIImage imageNamed:]生成的对象什么时候被释放？
+- applicationWillEnterForeground和applicationDidBecomeActive都会在哪些场景下被调用？举例越多越好。
+- 如何终止正在运行的工作线程？
+- iOS下所有的本地持久化方案。
 
 
 ## 谈下iOS开发中知道的哪些锁? 哪个性能最差?SD和AFN使用的哪个? 一般开发中你最常用哪个? 哪个锁apple存在问题又是什么问题?
@@ -27,11 +30,9 @@
 
 - `@synchronized` 性能最差,但是SD和AFN等其他框架很多使用这个.
 
-- dispatch_semaphore 信号量  []()
-	- 1. 保持线程同步
-	- 2. 为线程加锁
+- dispatch_semaphore 信号量 : 保持线程同步为线程加锁
 
-```
+```objc
 dispatch_semaphore_t signal = dispatch_semaphore_create(1); 
 
 dispatch_time_t overTime = dispatch_time(DISPATCH_TIME_NOW, 1.0f * NSEC_PER_SEC);
@@ -59,7 +60,7 @@ dispatch_semaphore_wait(signal, overTime)：可以理解为 lock,会使得 signa
 dispatch_semaphore_signal(signal)：可以理解为 unlock,会使得 signal 值 +1
 
 ```
-- tips 面试期间谈及信号量,一定要说具体项目使用场景.(YY较多框架使用)
+- tips:一定要说具体项目使用场景.(YY较多框架使用)
 
 ## iOS下如何实现指定线程数目的线程池?
 
@@ -75,6 +76,7 @@ dispatch_semaphore_signal(signal)：可以理解为 unlock,会使得 signal 值 
 - 定时轮询会存在延迟 用户体验就不好
 
 ## http的post和get啥区别
+
 - ~~无非post带参数,某种层面比get不受限制~~ 
 
 - 从语义角度分析
@@ -82,8 +84,6 @@ dispatch_semaphore_signal(signal)：可以理解为 unlock,会使得 signal 值 
 	- 安全性:不会引发 server 端的改变 
 	- 幂等:同一个方法请求多次结果相同
 	- 可缓存
-
-
 
 ## 使用atomic一定是线程安全的吗？
 - BOOL 类型 修饰符不影响
@@ -101,15 +101,18 @@ dispatch_semaphore_signal(signal)：可以理解为 unlock,会使得 signal 值 
 
 
 ## 如何使用runtime hook一个class的某个方法，又如何hook某个instance的方法？
-####  这个问题,首先要考虑怎么回答才能不被套路 
+
+> 这个问题,首先要考虑怎么回答才能不被套路 
+
 - 考虑 hook是否有公开头文件的类，有的话写一个Utility函数，再使用category，
 - 没有的话就建一个类作为新函数载体，然后先为被hook的类增加函数，再替换。
 - 如何hook某个instance的方法，应该可以定义一个函数指针变量(IMP要谈及吧)，hook时将要调用的地址赋给这个变量，调用时把这个变量当作函数来用 (RAC框架 hook 谈及)
 
 ## 聊下HTTP的POST的body体使用form-urlencoded和multipart/form-data的区别。
+
 - multipart/form-data是当上传文件或者二进制数据和非ASCII数据使用 ,AFN请求如何设置? 
 
-```
+```objc
 [self.requestSerializer setValue:@"multipart/form-data" forHTTPHeaderField:@"content-type"];
 ```
 - form-urlencoded是默认的mime内容编码类型，是通用的，但是它在传输比较大的二进制或者文本数据时效率极低
@@ -127,6 +130,7 @@ dispatch_semaphore_signal(signal)：可以理解为 unlock,会使得 signal 值 
 - 后台杀进程的时候、IM、第三方授权分享登录回调情况下等
 
 ## 如何终止正在运行的工作线程？
+
 - 线程中调用exit、pthread_exit、pthread_kill、pthread_cancel
 - NSOperation ,接口设计的cancle 实际上只能取消还未运行的,已经运行的无法取消.
 
@@ -142,9 +146,7 @@ dispatch_semaphore_signal(signal)：可以理解为 unlock,会使得 signal 值 
 - CoreData
 - Realm (Swift OC 不可以互操作)
 
-
-
 ## 链接
 
-- [面试题系列目录](README.md)
+- [面试题系列目录](../README.md)
 - **下一份**: [interview-iOS-2](interview-iOS-2.md)

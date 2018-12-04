@@ -1,7 +1,8 @@
 ## 一个渣硕iOS春招总结 
 
 > 作者：Nil_Lu
-链接：https://juejin.im/post/5ad541e0f265da23994f032c
+
+> 链接：https://juejin.im/post/5ad541e0f265da23994f032c
 
 #### 不能直接po原题，但是我总结了下背后的知识点
 
@@ -135,6 +136,6 @@
 
 ## 链接
 
-- [面试题系列目录](README.md)
+- [面试题系列目录](../README.md)
 - **上一份**: [我的iOS面试之旅](interview-iOS-8-我的iOS面试之旅.md)
 - **下一份**: [interview-iOS-10-iOS面试败北感悟](interview-iOS-10-iOS面试败北感悟.md)

@@ -1,4 +1,5 @@
 # 基础问题系列
+
 > 来源地址:https://www.jianshu.com/p/1904f5ee7470
 
 ###  什么是KVO和KVC？  
@@ -49,12 +50,8 @@ addStudent(“zss”)
 
 ```
 
-
 ### 如何对iOS设备进行性能测试？
 - Instruments 是应用程序用来动态跟踪和分析 Mac OS X 和 iOS 代码的实用工具。这是一个灵活而强大的工具,它让你可以跟踪一个或多个进程,并检查收集的数据
-
-### 使用过CocoPods吗？它是什么？CocoaPods的原理？ 
-- [参考](interview-iOS-4.md)
 
 ### 集成三方框架有哪些方法？
 - 手动集成
@@ -74,7 +71,7 @@ addStudent(“zss”)
 
 
 ### 一个动画怎么实现？ 
->  CoreAnimation（核心动画）
+>  [CoreAnimation（核心动画）](https://github.com/DevDragonLi/Core-AnimationPerformanceOptimization)
 
 ### iOS中常用的数据存储方式有哪些？
 - 综合	
@@ -94,7 +91,9 @@ addStudent(“zss”)
 
 
 ### 说一说你对SQLite的认识？
--[参考](https://zhuanlan.zhihu.com/p/23911987)
+
+- [参考](https://zhuanlan.zhihu.com/p/23911987)
+
 - 性能,需求等方面
 
 ### runloop和线程有什么关系？
@@ -136,7 +135,7 @@ addStudent(“zss”)
 
 ## 链接
 
-- [面试题系列目录](README.md)
-- **上一份**: [interview-iOS-5](interview-iOS-5.md)
+- [面试题系列目录](../README.md)
+- **上一份**: [宝库iOS研发岗面试:参考答案已更新完毕](interview-iOS-5.md)
 - **下一份**: [2018-4月份iOS面试经历](interview-iOS-7-2018-4月份iOS面试经历.md)
 
